@@ -57,6 +57,16 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: load 6s ease-in-out;
+}
+
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
 }
 
 .input-wrap{
