@@ -80,7 +80,7 @@
             </div>
           </form>
           <div class="language">
-            <span>Google offered in: <a href="#">ខ្មែរ</a></span>
+            <span>Google offered in: <a id="lang" href="#">ខ្មែរ</a></span>
           </div>
         </div>
       </main>
@@ -120,4 +120,16 @@
       </footer>
     </div>
   </body>
+  <script>
+    const lang = document.querySelector('#lang')
+    
+    function changeLanguage(){
+      if(this.innerText === 'Eng'){
+        return this.innerText = 'ខ្មែរ'
+      }
+      return this.innerText = 'Eng'
+    }
+    
+    lang.onclick = changeLanguage
+  </script>
 </html>
